@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!DOCManufacturerhtml>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Activity</title>
 </head>
 <body>
-    <h2>My FURNITURES Collection:</h2>
+    <h2>Show Furnitures Collection:</h2>
 
     <button type="button" onclick="loadXMLDoc()">
-    Get My FURNITURES Collection</button>
+    Furnitures</button>
     
-    <table id="demo" border="1" cellspacing="0" cellpadding="10" width="80%" align="center"">
+    <table id="demo" border="2" cellspacing="0" cellpadding="10" width="80%" align="center">
     </table>
     
     <script>
@@ -23,7 +23,7 @@
                     createTable(this);
                 }
             };
-            xmlhttp.open("GET", "furnitures.xml", true);
+            xmlhttp.open("GET", "Furnitures.xml", true);
             xmlhttp.send();
         }
         
@@ -35,33 +35,45 @@
 
             txt = `
                 <tr>
-                    <th>ID</th>
-                    <th>BRAND</th>
-                    <th>COLOR</th>
-                    <th>PRICE</th>
-                    <th>MANUFACTURER</th>
-                    <th>MATERIALS</th>
+                    <th>Id</th>
+                    <th>Brand</th>
+                    <th>Color</th>
+                    <th>Price</th>
+                    <th>Manufacturer</th>
+                    <th>Materials</th>
                 </tr>
             `;
 
-            var id = xmlDoc.getElementsByTagName("ID");
-            var brand = xmlDoc.getElementsByTagName("BRAND");
-            var color = xmlDoc.getElementsByTagName("COLOR");
-            var price = xmlDoc.getElementsByTagName("PRICE");
-            var manufacturer = xmlDoc.getElementsByTagName("MANUFACTURER");
-            var materials = xmlDoc.getElementsByTagName("MATERIALS");
+            var Id = xmlDoc.getElementsByTagName("Id");
+            var Brand = xmlDoc.getElementsByTagName("Brand");
+            var Color = xmlDoc.getElementsByTagName("Color");
+            var Price = xmlDoc.getElementsByTagName("Price");
+            var Manufacturer = xmlDoc.getElementsByTagName("Manufacturer");
+            
+            var m1 = xmlDoc.getElementsByTagName("m1");
+            var m2 = xmlDoc.getElementsByTagName("m2");
+            var m3 = xmlDoc.getElementsByTagName("m3");
 
-            for (i = 0; i< id.length; i++) {
+
+            for (i = 0; i< Id.length; i++) {
                 txt += `
                     <tr>
-                        <td>${id[i].childNodes[0].nodeValue}</td>
-                        <td>${brand[i].childNodes[0].nodeValue}</td>
-                        <td>${color[i].childNodes[0].nodeValue}</td>
-                        <td>${price[i].childNodes[0].nodeValue}</td>
-                        <td>${manufacturer[i].childNodes[0].nodeValue}</td>
-                        <td><li>${materials[i].childNodes[0].nodeValue}</li></td>
-                        
+                        <td>${Id[i].childNodes[0].nodeValue}</td>
+                        <td>${Brand[i].childNodes[0].nodeValue}</td>
+                        <td>${Color[i].childNodes[0].nodeValue}</td>
+                        <td>${Price[i].childNodes[0].nodeValue}</td>
+                        <td>${Manufacturer[i].childNodes[0].nodeValue}</td>
+                                                    
+                            <th>
+                                <ul>
+                                    <li>${m1[i].childNodes[0].nodeValue}</li>
+                                    <li>${m2[i].childNodes[0].nodeValue}</li>
+                                    <li>${m3[i].childNodes[0].nodeValue}</li>
+                                </ul>
+                            </th>
                     </tr>
+                    
+                
                 `;                
             }
 
