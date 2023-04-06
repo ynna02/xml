@@ -1,68 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <Collection>
     <Furnitures>
-        <ID>CHAIR</ID>
-        <BRAND>CHESTERFIELD</BRAND>
-        <COLOR>SEA SHEEL</COLOR>
-        <PRICE>38,998</PRICE>
-        <MANUFACTURER>QUEEN ARTS AND TRENDS COPR.</MANUFACTURER>
-        <MATERIALS>
-            VELVET, 
-            LEATHER,
-            TWEED
-        </MATERIALS>
+        <Id>CHAIR</Id>
+        <Brand>CHESTERFIELD</Brand>
+        <Color>SEA SHEEL</Color>
+        <Price>38,998</Price>
+        <Manufacturer>QUEEN ARTS AND TRENDS COPR.</Manufacturer>
+        <Materials>
+            <m1>VELVET</m1>
+            <m2>LEATHER</m2>
+            <m3>TWEED</m3>
+        </Materials>
     </Furnitures>
-
     <Furnitures>
-        <ID>TABLE</ID>
-        <BRAND>KARTELL</BRAND>
-        <COLOR>CORN SILK</COLOR>
-        <PRICE>25,999</PRICE>
-        <MANUFACTURER>OFFICEBUSTERS</MANUFACTURER>
-        <MATERIALS>
-            WOOD, 
-            LEATHER,
-            MELAMINE
-        </MATERIALS>
+        <Id>TABLE</Id>
+        <Brand>KARTELL</Brand>
+        <Color>CORN SILK</Color>
+        <Price>25,999</Price>
+        <Manufacturer>OFFICEBUSTERS</Manufacturer>
+        <Materials>
+            <m1>WOOD</m1>
+            <m2>LEATHER</m2>
+            <m3>MELAMINE</m3>
+        </Materials>
     </Furnitures>
-
     <Furnitures>
-        <ID>PILLOW</ID>
-        <BRAND>SAATVA LATEX</BRAND>
-        <COLOR>PEACH PUFF </COLOR>
-        <PRICE>999</PRICE>
-        <MANUFACTURER>JECAMS ENTERPRISES</MANUFACTURER>
-        <MATERIALS>
-            INNERSPRING, 
-            MEMORY FOAM,
-            FEATHER
-        </MATERIALS>
+        <Id>PILLOW</Id>
+        <Brand>SAATVA LATEX</Brand>
+        <Color>PEACH PUFF </Color>
+        <Price>999</Price>
+        <Manufacturer>JECAMS ENTERPRISES</Manufacturer>
+        <Materials>
+            <m1>INNERSPRING</m1>
+            <m2>MEMORY FOAM</m2>
+            <m3>FEATHER</m3>
+        </Materials>
     </Furnitures>
-
     <Furnitures>
-        <ID>BED</ID>
-        <BRAND>HELIX</BRAND>
-        <COLOR>SEA SHEEL</COLOR>
-        <PRICE>43,999</PRICE>
-        <MANUFACTURER>A.R KITCHEN CABINET DESIGN</MANUFACTURER>
-        <MATERIALS>
-            FABRIC, 
-            METAL,
-            VEENER
-        </MATERIALS>
+        <Id>BED</Id>
+        <Brand>HELIX</Brand>
+        <Color>SEA SHEEL</Color>
+        <Price>43,999</Price>
+        <Manufacturer>A.R KITCHEN CABINET DESIGN</Manufacturer>
+        <Materials>
+            <m1>FABRIC</m1>
+            <m2>METAL</m2>
+            <m3>VEENER</m3>
+        </Materials>
     </Furnitures>
-
     <Furnitures>
-        <ID>INDOOR LIGHTHING</ID>
-        <BRAND>AMAZON</BRAND>
-        <COLOR>OLD LACE</COLOR>
-        <PRICE>12,999</PRICE>
-        <MANUFACTURER>MEGAOFFICE SURPLUS PHILIPPINES</MANUFACTURER>
-        <MATERIALS>
-            CRYSTAL,  
-            ALUMINUM,
-            ACRYL
-        </MATERIALS>
+        <Id>INDOOR LIGHTHING</Id>
+        <Brand>AMAZON</Brand>
+        <Color>OLD LACE</Color>
+        <Price>12,999</Price>
+        <Manufacturer>MEGAOFFICE SURPLUS PHILIPPINES</Manufacturer>
+        <Materials>
+            <m1>CRYSTAL</m1>  
+            <m2>ALUMINUM</m2>
+            <m3>ACRYL</m3>
+        </Materials>
     </Furnitures>
-</Collection>
+</Collection>    
